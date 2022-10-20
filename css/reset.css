@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* { 
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #464543;
+}
+
+header, main, section, aside, article, footer, nav, menu, details,figure, figcaption {
+  display: block;
+}
+li { 
+  list-style: none;
+}
+a { 
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+.inner{
+  position: relative;
+  width: 1600px; 
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 35px;
+}
+.write {
+  font-family: 'Ephesis', cursive;
+}

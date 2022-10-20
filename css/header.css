@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+.header_wrap {
+  background-color: #f6e8d8;
+  height: 70px;
+}
+header { 
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  line-height: 70px;
+}
+header h1 {
+  margin-left: 20px;
+}
+header h1 a {
+  font-family: 'Pacifico', cursive;
+}
+header h1 i {
+  font-size: 50px;
+}
+
+/*** GNB ***/
+.gnb {
+  display: block;
+}
+.gnb ul {
+  display: flex;
+}
+.gnb li {
+  letter-spacing: 2px;
+}
+.gnb li:hover a {
+  transform: scale(1.03);
+}
+.gnb li:hover .subgnb_wrap {
+  display: block;
+}
+.gnb li a {
+  display: block;
+  padding: 0 50px 0 0;
+}
+
+.subgnb_wrap {
+  display: none;
+  position: absolute;
+  top: 70px;
+  z-index: 200;
+}
+.subgnb_wrap .subgnb {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative;
+}
+.subgnb_wrap .subgnb li {
+  margin: 0;
+  padding: 0 10px;
+  line-height: 3;
+}
+.subgnb_wrap .subgnb li:hover a {
+  color: #000;
+}
+.subgnb_wrap .subgnb li a {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #464543;
+}
+.gnb_btn {
+  display: none;
+}
+
+/*** 아이콘 ***/
+.header_icon ul {
+  display: flex;
+  margin-right: 20px;
+}
+.header_icon li {
+  font-size: 25px;
+  margin-right: 30px;
+}
+.header_icon li:last-of-type {
+  margin: 0;
+}
+.header_icon li a {
+  display: block;
+}
+
+
+/*********** TABLET **********/
+@media (min-width: 1025px) and (max-width: 1280px){
+  .gnb li a {
+    padding: 0 20px 0 0;
+  }
+}
+
+@media (max-width: 1143px){
+  header {
+    position: relative;
+  }
+  header h1 {
+    order: 2; 
+    font-size: 30px;
+  }
+  .gnb{
+    display: none;
+    background-color: #F6E8D8;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    z-index: 10;
+  }
+  .gnb ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .gnb li {
+    border-top: 1px solid #e2d2c0;
+  }
+  .gnb li:hover {
+    background-color: #fff;
+  }
+  .gnb li a {
+    padding: 0;
+  }
+  .subgnb_wrap .subgnb {
+    display: none;
+  }
+  .gnb_btn {
+    order: 1;
+    display: block;
+    margin-left: 30px;
+    font-size: 34px;
+  }
+  .header_icon {
+    order: 3;
+    font-size: 34px;
+    padding-right: 30px;
+  }
+  .header_icon li.hide {
+    display: none;
+  }
+}
+
+
+/*********** MOBILE **********/
+@media (min-width: 300px) and (max-width: 768px){
+  header h1 {
+    font-size: 25px;
+  }
+}

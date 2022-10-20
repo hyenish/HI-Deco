@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/********** 비주얼 ***********/
+.visual button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 71px;
+  height: 71px;
+  background-color: transparent;
+  border: none;
+  border-radius: 100%;
+  z-index: 10;
+}
+.visual button:before {
+  font-size: 40px;
+  font-family: 'fontawesome';
+  color: transparent;
+}
+/* 화살표 */
+.visual button.slick-prev {
+  left: 50px;
+  font-size: 0;
+}
+.visual button.slick-prev:before {
+  content: "\f053";
+}
+.visual button.slick-next {
+  right: 50px;
+  font-size: 0;
+}
+.visual button.slick-next:before {
+  content: "\f054";
+}
+
+@media (max-width: 768px){
+  .visual button.slick-prev {
+    left: 0px;
+    font-size: 0;
+  }
+  .visual button.slick-next {
+    right: 0px;
+    font-size: 0;
+  }
+}
+
+
+
+/********** 스페셜 ***********/
+.special button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 71px;
+  height: 71px;
+  background-color: transparent;
+  border: none;
+  border-radius: 100%;
+  z-index: 10;
+}
+.special button:before {
+  font-size: 50px;
+  font-family: 'fontawesome';
+  color: #fff;
+}
+/* 화살표 */
+.special button.slick-prev {
+  left: 20px;
+  font-size: 0;
+}
+.special button.slick-prev:before {
+  content: "\f053";
+}
+.special button.slick-next {
+  right: 20px;
+  font-size: 0;
+}
+.special button.slick-next:before {
+  content: "\f054";
+}
+@media (max-width: 1143px){
+  .special button {
+    width: 50px;
+    height: 50px;
+  }
+  .special button.slick-prev {
+    left: 5px;
+    font-size: 0;
+  }
+  .special button.slick-next {
+    right: 5px;
+    font-size: 0;
+  }
+}
+@media (max-width: 768px){
+  .special button:before {
+    font-size: 50px;
+    font-family: 'fontawesome';
+    color: #808080;
+  }
+  .special .slick-list.draggable{
+    max-height:500px;
+  }
+}
+
+
+
+/********** 인스타 ***********/
+.insta button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-radius: 100%;
+  z-index: 10;
+}
+.insta button:before {
+  font-size: 40px;
+  font-family: 'fontawesome';
+  color: #808080;
+}
+/* 화살표 */
+.insta button.slick-prev {
+  left: -50px;
+  font-size: 0;
+}
+.insta button.slick-prev:before {
+  content: "\f053";
+}
+.insta button.slick-next {
+  right: -50px;
+  font-size: 0;
+}
+.insta button.slick-next:before {
+  content: "\f054";
+}
+
+@media (max-width: 1600px){
+  .insta button {
+    width: 30px;
+    height: 30px;
+  }
+  .insta button:before {
+    color: #fff;
+  }
+  .insta button.slick-prev {
+    left: 20px;
+    font-size: 0; 
+  }
+  .insta button.slick-next {
+    right: 20px;
+    font-size: 0; 
+  }
+}
+@media (max-width: 768px){
+  .insta button:before {
+    color: #fff;
+  }
+  .insta button.slick-prev {
+    left: 10px;
+    font-size: 0; 
+  }
+  .insta button.slick-next {
+    right: 10px;
+    font-size: 0; 
+  }
+}

@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+/********** VISUAL **********/
+.visual {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.visual img {
+  width: 100%;
+}
+
+
+/********** KEYWORD **********/
+.keyword {
+  margin: 150px 0;
+  overflow: hidden; 
+}
+.keyword .inner {
+  width: 100vw;
+}
+.keyword h2 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.keyword .hashtag ul {
+  text-align: center;
+}
+.keyword .hashtag li {
+  display: inline-block;
+}
+.keyword .hashtag li a {
+  display: inline-block;
+  border: 1px solid #6f675c;
+  border-radius: 30px;
+  padding: 10px 50px;
+  margin: 13px;
+  font-size: 18px;
+}
+.keyword .hashtag li a:hover {
+  background-color: #6f675c;
+  color: #fff;
+}
+
+
+/********** SPECIAL **********/
+.special {
+  margin: 150px 0;
+}
+.special .inner {
+  max-width: 1920px;
+  width: 97vw; 
+}
+.special h2 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.special .contents {
+  left: 50%;
+  transform: translate(-50%);
+  position: relative;
+}
+.special .contents .item_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.special .contents .item {
+  display: flex; 
+  width: 25%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.special img {
+  width: 100%;
+  height: 100%;
+}
+.special .text_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.special p.title {
+  font-size: 20px; 
+  font-weight: 500;
+}
+.special p.subtitle {
+  font-size: 15px;
+  color: #999;
+}
+
+
+/********** ROOMS **********/
+.rooms { 
+  position: relative; 
+}
+.rooms .inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 97vw;
+}
+.rooms h2 {
+  text-align: center;
+}
+.rooms p {
+  text-align: center;
+  margin: 30px 0;
+}
+.rooms_img {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.rooms_img img {
+  /* width: calc((100% / 3) - 40px);  */
+  width: calc((100% - 40px) / 3); 
+  margin-right: 20px;
+}
+.rooms_img img:last-of-type {
+  margin-right: 0;
+}
+
+
+/********** INTRODUCE **********/
+.introduce {
+  margin: 150px 0;
+  background-color: #F6E8D8;
+  width: 100%;
+  overflow: hidden;
+}
+.introduce .inner {
+  padding: 50px 0;
+  width: 100vw; 
+}
+.introduce h2 {
+  text-align: center;
+  color: #6f675c
+}
+.introduce h2 span {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #6f675c;
+}
+.introduce p {
+  text-align: center;
+  margin: 30px 0;
+  color: #6f675c;
+}
+.introduce button.write {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border: 0;
+  background-color: transparent;
+}
+.introduce button.write a {
+  font-family: 'Ephesis', cursive;
+  font-size: 35px;
+  color: #464543;
+}
+
+
+/********** INSTAGRAM **********/
+.insta {
+  margin: 150px 0 150px;
+}
+.insta .inner {
+  max-width: 1500px;
+  width: 97vw;
+}
+.insta h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.insta .item_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.insta .item { 
+  position: relative;
+  width: calc(100% / 4);
+  padding: 20px;
+}
+.insta .item a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.insta .item img {
+  width: 100%;
+  height: 100%;
+}
+
+/***  insta item hover ***/
+.insta .hoverTxt {
+  display: none;
+}
+.insta .item:hover .hoverTxt {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+.insta .hoverTxt i {
+  font-size: 30px;
+  color: #fff;
+}
+.insta .hoverTxt i:first-of-type{
+  margin-right: 20px;
+}
+/* .insta span.more {
+  position: relative; 
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 30px;
+  padding: 20px 30px;
+  border: 1px solid #6F675C;
+  background-color: transparent;
+}
+.insta span.more:hover {
+  background-color: #6F675C;
+  color: #fff;
+  transition: all .3s;
+} */
+
+
+/***** TABLET *****/
+@media (max-width: 1143px){
+  .special .contents .item {
+    width: calc(100% / 2);
+  }
+  .special .contents .item:nth-of-type(even){
+    padding-right: 0;
+  }
+  .special .text_box {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .insta .item { 
+    position: relative;
+    width: calc(100% / 3);
+    padding: 20px;
+  }
+  .insta .item.hide {
+    display: none;
+  }
+  .insta button.more {
+    display: none;
+  }
+}
+
+
+/***** MOBILE *****/
+@media (max-width: 768px){
+  h2 {
+    font-size: 27px;
+  }
+  .keyword {
+    display: none;
+  }
+  .special {
+    display: none;
+  }
+  .special h2 {
+    margin: 50px 0 20px;
+  }
+  .special img {
+    width: 100vw;
+    max-width: 500px;
+  }
+  .special .contents .item {
+    width: 100%;
+  }
+  .special .contents li {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .rooms h2 {
+    margin: 50px 0 20px;
+  }
+  .rooms p.en {
+    display: none;
+  }
+  .insta .item { 
+    position: relative;
+    width: calc(100% / 2);
+    padding: 20px;
+  }
+  .insta .item.hide {
+    display: none;
+  }
+}
